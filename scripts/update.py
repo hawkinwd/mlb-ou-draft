@@ -1,4 +1,5 @@
 import requests, json
+import datetime
 
 URL = "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104"
 
@@ -45,5 +46,7 @@ for player in picks["players"]:
     player["tiebreaker"] = round(tb,1)
 
 picks["players"].sort(key=lambda x: (-x["correct"], x["tiebreaker"]))
+
+picks["last_updated"] = str(datetime.datetime.utcnow())
 
 json.dump(picks, open("data.json","w"), indent=2)

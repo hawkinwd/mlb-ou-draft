@@ -6,3 +6,4 @@ th { background:#222; }
 .wrong { color:#f44336; }
 .player { cursor:pointer; }
 .hidden { display:none; }
+img { filter: brightness(0) invert(1); }

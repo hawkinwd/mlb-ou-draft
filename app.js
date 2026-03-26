@@ -4,7 +4,16 @@ async function load() {
 
   const app = document.getElementById('app');
 
-  let html = `<table>
+const TEAM_IDS = {
+  Yankees:147, RedSox:111, BlueJays:141, Orioles:110, Rays:139,
+  Tigers:116, Royals:118, Guardians:114, Twins:142, WhiteSox:145,
+  Astros:117, Mariners:136, Rangers:140, Athletics:133, Angels:108,
+  Braves:144, Mets:121, Phillies:143, Marlins:146, Nationals:120,
+  Cubs:112, Brewers:158, Reds:113, Pirates:134, Cardinals:138,
+  Dodgers:119, Padres:135, Giants:137, Diamondbacks:109, Rockies:115
+};
+
+  let html = `<div><table>
     <tr><th>Rank</th><th>Player</th><th>Correct</th><th>Tiebreaker</th></tr>`;
 
   data.players.forEach((p,i)=>{
@@ -24,7 +33,11 @@ async function load() {
 
     p.teams.forEach(t=>{
       html += `<tr>
-        <td>${t.team}</td>
+        <td>
+          <img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[t.team]}.svg" 
+              style="height:20px; vertical-align:middle; margin-right:6px;">
+          ${t.team}
+        </td>
         <td>${t.pick}</td>
         <td>${t.line}</td>
         <td>${t.wins}-${t.losses}</td>
@@ -38,6 +51,7 @@ async function load() {
   });
 
   html += "</table>";
+  html += `<div position="fixed" bottom=0 right=0>${data.last_updated}</div></div>`;
   app.innerHTML = html;
 }
 
