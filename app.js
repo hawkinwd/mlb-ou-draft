@@ -14,13 +14,17 @@ const TEAM_IDS = {
 };
 
   let html = `<div><table>
-    <tr><th>Rank</th><th>Player</th><th>Correct</th><th>Tiebreaker</th></tr>`;
+    <tr><th>Rank</th><th>Player</th><th>Proj. Correct</th><th>✓</th><th>✗</th><th>Tiebreaker</th></tr>`;
 
   data.players.forEach((p,i)=>{
+    correct_teams = p.teams.filter(t => t.correct);
+    incorrect_teams = p.teams.filter(t => !t.correct);
     html += `<tr class="player" onclick="toggle(${i})">
       <td>${i+1}</td>
       <td>${p.name}</td>
       <td>${p.correct}</td>
+      <td>${correct_teams.map(t => `<img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[t.team]}.svg" />`).join("")}
+      <td>${incorrect_teams.map(t => `<img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[t.team]}.svg" />`).join("")}
       <td>${p.tiebreaker}</td>
     </tr>`;
 
@@ -34,8 +38,7 @@ const TEAM_IDS = {
     p.teams.forEach(t=>{
       html += `<tr>
         <td>
-          <img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[t.team]}.svg" 
-              style="height:20px; vertical-align:middle; margin-right:6px;">
+          <img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[t.team]}.svg" />
           ${t.team}
         </td>
         <td>${t.pick}</td>
