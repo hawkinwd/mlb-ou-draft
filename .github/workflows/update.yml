@@ -1,0 +1,28 @@
+name: Update MLB Data
+
+on:
+  schedule:
+    - cron: "0 10 * * *"   # daily (5am EST)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - run: pip install requests
+
+      - run: python scripts/update.py
+
+      - run: |
+          git config user.name "bot"
+          git config user.email "bot@github.com"
+          git add data.json
+          git commit -m "update data" || echo "no changes"
+          git push

@@ -1,0 +1,64 @@
+{
+  "players": [
+    {
+      "name": "Sam",
+      "teams": [
+        { "team": "Yankees", "pick": "Over", "line": 90.5, "wins": 0, "losses": 0, "guess": 95 },
+        { "team": "Mariners", "pick": "Over", "line": 89.5, "wins": 0, "losses": 0, "guess": 97 },
+        { "team": "Tigers", "pick": "Over", "line": 85.5, "wins": 0, "losses": 0, "guess": 102 },
+        { "team": "Royals", "pick": "Over", "line": 82.5, "wins": 0, "losses": 0, "guess": 92 },
+        { "team": "Giants", "pick": "Under", "line": 80.5, "wins": 0, "losses": 0, "guess": 74 }
+      ]
+    },
+    {
+      "name": "Mason",
+      "teams": [
+        { "team": "Cubs", "pick": "Over", "line": 88.5, "wins": 0, "losses": 0, "guess": 98 },
+        { "team": "Mets", "pick": "Under", "line": 90.5, "wins": 0, "losses": 0, "guess": 85 },
+        { "team": "Athletics", "pick": "Under", "line": 75.5, "wins": 0, "losses": 0, "guess": 68 },
+        { "team": "Astros", "pick": "Over", "line": 86.5, "wins": 0, "losses": 0, "guess": 90 },
+        { "team": "Red Sox", "pick": "Under", "line": 87.5, "wins": 0, "losses": 0, "guess": 86 }
+      ]
+    },
+    {
+      "name": "Will",
+      "teams": [
+        { "team": "Brewers", "pick": "Over", "line": 84.5, "wins": 0, "losses": 0, "guess": 88 },
+        { "team": "Pirates", "pick": "Over", "line": 78.5, "wins": 0, "losses": 0, "guess": 81 },
+        { "team": "Dodgers", "pick": "Under", "line": 102.5, "wins": 0, "losses": 0, "guess": 97 },
+        { "team": "Angels", "pick": "Under", "line": 70.5, "wins": 0, "losses": 0, "guess": 69 },
+        { "team": "Twins", "pick": "Under", "line": 72.5, "wins": 0, "losses": 0, "guess": 71 }
+      ]
+    },
+    {
+      "name": "Nate",
+      "teams": [
+        { "team": "Braves", "pick": "Over", "line": 86.5, "wins": 0, "losses": 0, "guess": 89 },
+        { "team": "Diamondbacks", "pick": "Over", "line": 79.5, "wins": 0, "losses": 0, "guess": 82 },
+        { "team": "Nationals", "pick": "Under", "line": 65.5, "wins": 0, "losses": 0, "guess": 58 },
+        { "team": "Guardians", "pick": "Over", "line": 79.5, "wins": 0, "losses": 0, "guess": 81 },
+        { "team": "Rockies", "pick": "Under", "line": 54.5, "wins": 0, "losses": 0, "guess": 49 }
+      ]
+    },
+    {
+      "name": "Corbin",
+      "teams": [
+        { "team": "Reds", "pick": "Over", "line": 80.5, "wins": 0, "losses": 0, "guess": 85 },
+        { "team": "Padres", "pick": "Over", "line": 83.5, "wins": 0, "losses": 0, "guess": 84 },
+        { "team": "Phillies", "pick": "Over", "line": 89.5, "wins": 0, "losses": 0, "guess": 90 },
+        { "team": "Cardinals", "pick": "Under", "line": 69.5, "wins": 0, "losses": 0, "guess": 66 },
+        { "team": "Blue Jays", "pick": "Under", "line": 88.5, "wins": 0, "losses": 0, "guess": 87 }
+      ]
+    },
+    {
+      "name": "Liam",
+      "teams": [
+        { "team": "White Sox", "pick": "Under", "line": 67.5, "wins": 0, "losses": 0, "guess": 64 },
+        { "team": "Rangers", "pick": "Over", "line": 83.5, "wins": 0, "losses": 0, "guess": 87 },
+        { "team": "Orioles", "pick": "Under", "line": 85.5, "wins": 0, "losses": 0, "guess": 77 },
+        { "team": "Marlins", "pick": "Over", "line": 72.5, "wins": 0, "losses": 0, "guess": 80 },
+        { "team": "Rays", "pick": "Over", "line": 77.5, "wins": 0, "losses": 0, "guess": 81 }
+      ]
+    }
+  ]
+}
