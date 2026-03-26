@@ -34,7 +34,7 @@
       "name": "Nate",
       "teams": [
         { "team": "Braves", "pick": "Over", "line": 86.5, "wins": 0, "losses": 0, "guess": 89 },
-        { "team": "Diamondbacks", "pick": "Over", "line": 79.5, "wins": 0, "losses": 0, "guess": 82 },
+        { "team": "D-backs", "pick": "Over", "line": 79.5, "wins": 0, "losses": 0, "guess": 82 },
         { "team": "Nationals", "pick": "Under", "line": 65.5, "wins": 0, "losses": 0, "guess": 58 },
         { "team": "Guardians", "pick": "Over", "line": 79.5, "wins": 0, "losses": 0, "guess": 81 },
         { "team": "Rockies", "pick": "Under", "line": 54.5, "wins": 0, "losses": 0, "guess": 49 }

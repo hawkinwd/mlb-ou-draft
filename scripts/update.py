@@ -2,15 +2,6 @@ import requests, json
 
 URL = "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104"
 
-TEAM_MAP = {
- "Yankees":"New York Yankees","Mariners":"Seattle Mariners","Tigers":"Detroit Tigers","Royals":"Kansas City Royals","Giants":"San Francisco Giants",
- "Cubs":"Chicago Cubs","Mets":"New York Mets","Athletics":"Oakland Athletics","Astros":"Houston Astros","Red Sox":"Boston Red Sox",
- "Brewers":"Milwaukee Brewers","Pirates":"Pittsburgh Pirates","Dodgers":"Los Angeles Dodgers","Angels":"Los Angeles Angels","Twins":"Minnesota Twins",
- "Braves":"Atlanta Braves","Diamondbacks":"Arizona Diamondbacks","Nationals":"Washington Nationals","Guardians":"Cleveland Guardians","Rockies":"Colorado Rockies",
- "Reds":"Cincinnati Reds","Padres":"San Diego Padres","Phillies":"Philadelphia Phillies","Cardinals":"St. Louis Cardinals","Blue Jays":"Toronto Blue Jays",
- "White Sox":"Chicago White Sox","Rangers":"Texas Rangers","Orioles":"Baltimore Orioles","Marlins":"Miami Marlins","Rays":"Tampa Bay Rays"
-}
-
 standings = requests.get(URL).json()
 
 records = {}
@@ -29,7 +20,7 @@ for player in picks["players"]:
     tb = 0
 
     for team in player["teams"]:
-        full = TEAM_MAP[team["team"]]
+        full = team["team"]
         wins = records[full]["wins"]
         losses = records[full]["losses"]
 
