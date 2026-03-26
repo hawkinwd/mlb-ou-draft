@@ -51,7 +51,7 @@ const TEAM_IDS = {
   });
 
   html += "</table>";
-  html += `<div position="fixed" bottom=0 right=0>${data.last_updated}</div></div>`;
+  html += `<div style="text-align: right;">Last Updated: ${data.last_updated}</div></div>`;
   app.innerHTML = html;
 }
 

@@ -47,6 +47,6 @@ for player in picks["players"]:
 
 picks["players"].sort(key=lambda x: (-x["correct"], x["tiebreaker"]))
 
-picks["last_updated"] = str(datetime.datetime.utcnow())
+picks["last_updated"] = datetime.datetime.now().strftime("%B %d, %Y, %I:%M %p")
 
 json.dump(picks, open("data.json","w"), indent=2)
