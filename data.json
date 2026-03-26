@@ -1,0 +1,6 @@
+{
+  "players": [
+    { "name": "Will", "correct": 3, "tiebreaker": 12 },
+    { "name": "Friend1", "correct": 2, "tiebreaker": 20 }
+  ]
+}
