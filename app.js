@@ -28,7 +28,7 @@ const TEAM_IDS = {
       <td>${p.tiebreaker}</td>
     </tr>`;
 
-    html += `<tr id="row-${i}" class="hidden"><td colspan="4">
+    html += `<tr id="row-${i}" class="hidden"><td colspan="6">
       <table>
         <tr>
           <th>Team</th><th>Pick</th><th>Line</th>
