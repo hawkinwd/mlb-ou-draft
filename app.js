@@ -4,22 +4,25 @@ async function load() {
 
   const app = document.getElementById('app');
 
-const TEAM_IDS = {
-  Yankees:147, 'Red Sox':111, 'Blue Jays':141, Orioles:110, Rays:139,
-  Tigers:116, Royals:118, Guardians:114, Twins:142, 'White Sox':145,
-  Astros:117, Mariners:136, Rangers:140, Athletics:133, Angels:108,
-  Braves:144, Mets:121, Phillies:143, Marlins:146, Nationals:120,
-  Cubs:112, Brewers:158, Reds:113, Pirates:134, Cardinals:138,
-  Dodgers:119, Padres:135, Giants:137, 'D-backs':109, Rockies:115
-};
+  const TEAM_IDS = {
+    Yankees:147, 'Red Sox':111, 'Blue Jays':141, Orioles:110, Rays:139,
+    Tigers:116, Royals:118, Guardians:114, Twins:142, 'White Sox':145,
+    Astros:117, Mariners:136, Rangers:140, Athletics:133, Angels:108,
+    Braves:144, Mets:121, Phillies:143, Marlins:146, Nationals:120,
+    Cubs:112, Brewers:158, Reds:113, Pirates:134, Cardinals:138,
+    Dodgers:119, Padres:135, Giants:137, 'D-backs':109, Rockies:115
+  };
 
-  let html = `<div><table>
-    <tr><th>Rank</th><th>Player</th><th>Proj. Correct</th><th>✓</th><th>✗</th><th>Tiebreaker</th></tr>`;
+  let html =
+    `<div><table>
+      <tr><th></th><th>Rank</th><th>Player</th><th>Proj. Correct</th>
+      <th>✓</th><th>✗</th><th>Tiebreaker</th></tr>`;
 
   data.players.forEach((p,i)=>{
     correct_teams = p.teams.filter(t => t.correct);
     incorrect_teams = p.teams.filter(t => !t.correct);
     html += `<tr class="player" onclick="toggle(${i})">
+      <td class="chevron">&#9654;</td>
       <td>${i+1}</td>
       <td>${p.name}</td>
       <td>${p.correct}</td>
@@ -28,7 +31,7 @@ const TEAM_IDS = {
       <td>${p.tiebreaker}</td>
     </tr>`;
 
-    html += `<tr id="row-${i}" class="hidden"><td colspan="6">
+    html += `<tr id="row-${i}" class="hidden"><td colspan="7">
       <table>
         <tr>
           <th>Team</th><th>Pick</th><th>Line</th>
@@ -61,6 +64,11 @@ const TEAM_IDS = {
 function toggle(i){
   const row = document.getElementById(`row-${i}`);
   row.classList.toggle("hidden");
+
+  const playerRows = document.querySelectorAll('tr.player');
+  const chevron = playerRows[i].querySelector('.chevron');
+  const isOpen = !row.classList.contains("hidden");
+  chevron.textContent = isOpen ? '▼' : '▶';
 }
 
 load();
