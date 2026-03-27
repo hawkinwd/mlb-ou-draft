@@ -1,5 +1,6 @@
 import requests, json
-import datetime
+from datetime import datetime
+import zoneinfo
 
 URL = "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104"
 
@@ -47,6 +48,6 @@ for player in picks["players"]:
 
 picks["players"].sort(key=lambda x: (-x["correct"], x["tiebreaker"]))
 
-picks["last_updated"] = datetime.datetime.now().strftime("%B %d, %Y, %I:%M %p")
+picks["last_updated"] = datetime.now(zoneinfo.ZoneInfo("America/New_York")).strftime("%B %d, %Y, %I:%M %p")
 
 json.dump(picks, open("data.json","w"), indent=2)
