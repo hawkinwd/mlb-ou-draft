@@ -73,7 +73,7 @@ async function load() {
   });
 
   html += "</table>";
-  html += `<div class="bw-grid">${displayBWCards(worst, 'Worst')} ${displayBWCards(best, 'Best')}</div>`;
+  html += `<div class="bw-grid">${displayBWCards(worst_pick, 'Worst')} ${displayBWCards(best_pick, 'Best')}</div>`;
   html += `<div style="text-align: right;">Last Updated: ${data.last_updated}</div></div>`;
   app.innerHTML = html;
 }
