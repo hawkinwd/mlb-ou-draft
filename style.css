@@ -10,16 +10,16 @@ img { height:20px; vertical-align:middle; margin-right:6px; }
 .chevron { width: 1em; text-align: center; font-size: 0.7em; color: #888; }
 
 .bw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
-.bw-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 1rem 1.25rem; }
+.bw-card { background: #222; border: 1px solid #444; border-radius: 12px; padding: 1rem 1.25rem; }
 .bw-header { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 12px; }
-.bw-header.best { color: #0F6E56; }
-.bw-header.worst { color: #993C1D; }
-.bw-name { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+.bw-header.best { color: #4caf50; }
+.bw-header.worst { color: #f44336; }
+.bw-name { font-size: 16px; font-weight: 600; color: #eee; margin-bottom: 10px; }
 .bw-team { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
 .bw-badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 99px; margin-bottom: 12px; }
-.badge-over { background: #E1F5EE; color: #0F6E56; }
-.badge-under { background: #FAECE7; color: #993C1D; }
-.bw-stats { display: flex; gap: 16px; border-top: 1px solid #f0f0f0; padding-top: 10px; }
+.badge-over { background: #1b3a1f; color: #4caf50; }
+.badge-under { background: #3a1b1b; color: #f44336; }
+.bw-stats { display: flex; gap: 16px; border-top: 1px solid #444; padding-top: 10px; }
 .stat { display: flex; flex-direction: column; gap: 2px; }
-.stat-label { font-size: 11px; color: #999; text-transform: uppercase; }
-.stat-value { font-size: 20px; font-weight: 600; }
+.stat-label { font-size: 11px; color: #888; text-transform: uppercase; }
+.stat-value { font-size: 20px; font-weight: 600; color: #eee; }

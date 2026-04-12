@@ -74,14 +74,14 @@ async function load() {
 
   html += "</table>";
   html += `<div class="bw-grid">${displayBWCards(worst_pick, 'Worst')} ${displayBWCards(best_pick, 'Best')}</div>`;
-  html += `<div style="text-align: right;">Last Updated: ${data.last_updated}</div></div>`;
+  html += `<div style="text-align: right; padding-top: 10px">Last Updated: ${data.last_updated}</div></div>`;
   app.innerHTML = html;
 }
 
 function displayBWCards(bw, title) {
   return `
     <div class="bw-card">
-      <div class="bw-header ${title === "Best" ? "best" : "worst"}">${title}</div>
+      <div class="bw-header ${title === "Best" ? "best" : "worst"}">${title} Pick</div>
       <div class="bw-name">${bw['player'].name}</div>
       <div class="bw-team">
         <img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[bw['team'].team]}.svg" />
