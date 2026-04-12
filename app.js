@@ -18,9 +18,12 @@ async function load() {
       <tr><th></th><th>Rank</th><th>Player</th><th>Proj. Correct</th>
       <th>✓</th><th>✗</th><th>Tiebreaker</th></tr>`;
 
+  const worst_pick = {diff: 0, team: null, player: null};
+  const best_pick = {diff: 0, team: null, player: null};
+
   data.players.forEach((p,i)=>{
-    correct_teams = p.teams.filter(t => t.correct);
-    incorrect_teams = p.teams.filter(t => !t.correct);
+    const correct_teams = p.teams.filter(t => t.correct);
+    const incorrect_teams = p.teams.filter(t => !t.correct);
     html += `<tr class="player" onclick="toggle(${i})">
       <td class="chevron">&#9654;</td>
       <td>${i+1}</td>
@@ -51,14 +54,54 @@ async function load() {
         <td>${t.guess}</td>
         <td class="${t.correct?'correct':'wrong'}">${t.correct?'✓':'✗'}</td>
       </tr>`;
+
+      const actual_diff = t.pace - t.line;
+      const mult = t.pick === "Over" ? 1 : -1;
+
+      if (actual_diff * mult < worst_pick['diff']) {
+        worst_pick['diff'] = actual_diff * mult;
+        worst_pick['player'] = p;
+        worst_pick['team'] = t;
+      } else if (actual_diff * mult > best_pick['diff']) {
+        best_pick['diff'] = actual_diff * mult;
+        best_pick['player'] = p;
+        best_pick['team'] = t;
+      }
     });
 
     html += `</table></td></tr>`;
   });
 
   html += "</table>";
+  html += `<div class="bw-grid">${displayBWCards(worst, 'Worst')} ${displayBWCards(best, 'Best')}</div>`;
   html += `<div style="text-align: right;">Last Updated: ${data.last_updated}</div></div>`;
   app.innerHTML = html;
+}
+
+function displayBWCards(bw, title) {
+  return `
+    <div class="bw-card">
+      <div class="bw-header ${title === "Best" ? "best" : "worst"}">${title}</div>
+      <div class="bw-name">${bw['player'].name}</div>
+      <div class="bw-team">
+        <img src="https://www.mlbstatic.com/team-logos/${TEAM_IDS[bw['team'].team]}.svg" />
+        ${bw['team'].team}
+      </div>
+      <span class="bw-badge ${bw['team'].pick === "Over" ? "badge-over" : "badge-under"}">
+        ${bw['team'].pick}
+      </span>
+      <div class="bw-stats">
+        <div class="stat">
+          <span class="stat-label">Pace</span>
+          <span class="stat-value">${bw['team'].pace}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Line</span>
+          <span class="stat-value">${bw['team'].line}</span>
+        </div>
+      </div>
+    </div>
+  `;
 }
 
 function toggle(i){
