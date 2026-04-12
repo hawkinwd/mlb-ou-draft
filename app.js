@@ -1,17 +1,17 @@
+const TEAM_IDS = {
+  Yankees:147, 'Red Sox':111, 'Blue Jays':141, Orioles:110, Rays:139,
+  Tigers:116, Royals:118, Guardians:114, Twins:142, 'White Sox':145,
+  Astros:117, Mariners:136, Rangers:140, Athletics:133, Angels:108,
+  Braves:144, Mets:121, Phillies:143, Marlins:146, Nationals:120,
+  Cubs:112, Brewers:158, Reds:113, Pirates:134, Cardinals:138,
+  Dodgers:119, Padres:135, Giants:137, 'D-backs':109, Rockies:115
+};
+
 async function load() {
   const res = await fetch('data.json');
   const data = await res.json();
 
   const app = document.getElementById('app');
-
-  const TEAM_IDS = {
-    Yankees:147, 'Red Sox':111, 'Blue Jays':141, Orioles:110, Rays:139,
-    Tigers:116, Royals:118, Guardians:114, Twins:142, 'White Sox':145,
-    Astros:117, Mariners:136, Rangers:140, Athletics:133, Angels:108,
-    Braves:144, Mets:121, Phillies:143, Marlins:146, Nationals:120,
-    Cubs:112, Brewers:158, Reds:113, Pirates:134, Cardinals:138,
-    Dodgers:119, Padres:135, Giants:137, 'D-backs':109, Rockies:115
-  };
 
   let html =
     `<div><table>
