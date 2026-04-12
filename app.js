@@ -62,7 +62,7 @@ async function load() {
         worst_pick['diff'] = actual_diff * mult;
         worst_pick['player'] = p;
         worst_pick['team'] = t;
-      } else if (actual_diff * mult > 0 && actual_diff * mult < best_pick['diff']) {
+      } else if (actual_diff * mult > best_pick['diff']) {
         best_pick['diff'] = actual_diff * mult;
         best_pick['player'] = p;
         best_pick['team'] = t;
