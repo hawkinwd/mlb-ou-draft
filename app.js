@@ -19,7 +19,7 @@ async function load() {
       <th>✓</th><th>✗</th><th>Tiebreaker</th></tr>`;
 
   const worst_pick = {diff: 0, team: null, player: null};
-  const best_pick = {diff: 0, team: null, player: null};
+  const best_pick = {diff: Infinity, team: null, player: null};
 
   data.players.forEach((p,i)=>{
     const correct_teams = p.teams.filter(t => t.correct);
@@ -62,7 +62,7 @@ async function load() {
         worst_pick['diff'] = actual_diff * mult;
         worst_pick['player'] = p;
         worst_pick['team'] = t;
-      } else if (actual_diff * mult > best_pick['diff']) {
+      } else if (actual_diff * mult > 0 && actual_diff * mult < best_pick['diff']) {
         best_pick['diff'] = actual_diff * mult;
         best_pick['player'] = p;
         best_pick['team'] = t;
