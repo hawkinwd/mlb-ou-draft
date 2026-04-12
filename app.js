@@ -19,7 +19,7 @@ async function load() {
       <th>✓</th><th>✗</th><th>Tiebreaker</th></tr>`;
 
   const worst_pick = {diff: 0, team: null, player: null};
-  const best_pick = {diff: Infinity, team: null, player: null};
+  const best_pick = {diff: 0, team: null, player: null};
 
   data.players.forEach((p,i)=>{
     const correct_teams = p.teams.filter(t => t.correct);
