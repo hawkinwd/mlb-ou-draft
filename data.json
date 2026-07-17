@@ -80,12 +80,12 @@
           "team": "Mets",
           "pick": "Under",
           "line": 90.5,
-          "wins": 40,
+          "wins": 41,
           "losses": 57,
           "guess": 85,
-          "pace": 66.8,
+          "pace": 67.8,
           "correct": true,
-          "diff": -18.2
+          "diff": -17.2
         },
         {
           "team": "Athletics",
@@ -122,7 +122,7 @@
         }
       ],
       "correct": 4,
-      "tiebreaker": 33.0
+      "tiebreaker": 32.0
     },
     {
       "name": "Nate",
@@ -340,11 +340,11 @@
           "pick": "Over",
           "line": 89.5,
           "wins": 54,
-          "losses": 43,
+          "losses": 44,
           "guess": 90,
-          "pace": 90.2,
-          "correct": true,
-          "diff": 0.2
+          "pace": 89.3,
+          "correct": false,
+          "diff": -0.7
         },
         {
           "team": "Cardinals",
@@ -369,9 +369,9 @@
           "diff": -11.1
         }
       ],
-      "correct": 2,
-      "tiebreaker": 11.2
+      "correct": 1,
+      "tiebreaker": 11.1
     }
   ],
-  "last_updated": "July 16, 2026, 07:23 AM"
+  "last_updated": "July 17, 2026, 07:11 AM"
 }
