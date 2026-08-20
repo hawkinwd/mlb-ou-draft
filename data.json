@@ -1,68 +1,6 @@
 {
   "players": [
     {
-      "name": "Mason",
-      "teams": [
-        {
-          "team": "Cubs",
-          "pick": "Over",
-          "line": 88.5,
-          "wins": 74,
-          "losses": 53,
-          "guess": 98,
-          "pace": 94.4,
-          "correct": true,
-          "diff": -3.6
-        },
-        {
-          "team": "Mets",
-          "pick": "Under",
-          "line": 90.5,
-          "wins": 57,
-          "losses": 70,
-          "guess": 85,
-          "pace": 72.7,
-          "correct": true,
-          "diff": -12.3
-        },
-        {
-          "team": "Athletics",
-          "pick": "Under",
-          "line": 75.5,
-          "wins": 49,
-          "losses": 77,
-          "guess": 68,
-          "pace": 63.0,
-          "correct": true,
-          "diff": -5.0
-        },
-        {
-          "team": "Astros",
-          "pick": "Over",
-          "line": 86.5,
-          "wins": 63,
-          "losses": 63,
-          "guess": 90,
-          "pace": 81.0,
-          "correct": false,
-          "diff": -9.0
-        },
-        {
-          "team": "Red Sox",
-          "pick": "Under",
-          "line": 87.5,
-          "wins": 68,
-          "losses": 58,
-          "guess": 86,
-          "pace": 87.4,
-          "correct": true,
-          "diff": 1.4
-        }
-      ],
-      "correct": 4,
-      "tiebreaker": 22.3
-    },
-    {
       "name": "Will",
       "teams": [
         {
@@ -70,59 +8,121 @@
           "pick": "Over",
           "line": 84.5,
           "wins": 78,
-          "losses": 48,
+          "losses": 49,
           "guess": 88,
-          "pace": 100.3,
+          "pace": 99.5,
           "correct": true,
-          "diff": 12.3
+          "diff": 11.5
         },
         {
           "team": "Pirates",
           "pick": "Over",
           "line": 78.5,
-          "wins": 62,
+          "wins": 63,
           "losses": 66,
           "guess": 81,
-          "pace": 78.5,
-          "correct": false,
-          "diff": -2.5
+          "pace": 79.1,
+          "correct": true,
+          "diff": -1.9
         },
         {
           "team": "Dodgers",
           "pick": "Under",
           "line": 102.5,
-          "wins": 76,
+          "wins": 77,
           "losses": 51,
           "guess": 97,
-          "pace": 96.9,
+          "pace": 97.5,
           "correct": true,
-          "diff": -0.1
+          "diff": 0.5
         },
         {
           "team": "Angels",
           "pick": "Under",
           "line": 70.5,
           "wins": 50,
-          "losses": 76,
+          "losses": 77,
           "guess": 69,
-          "pace": 64.3,
+          "pace": 63.8,
           "correct": true,
-          "diff": -4.7
+          "diff": -5.2
         },
         {
           "team": "Twins",
           "pick": "Under",
           "line": 72.5,
-          "wins": 62,
+          "wins": 63,
           "losses": 65,
           "guess": 71,
-          "pace": 79.1,
+          "pace": 79.7,
           "correct": false,
-          "diff": 8.1
+          "diff": 8.7
         }
       ],
-      "correct": 3,
-      "tiebreaker": 17.1
+      "correct": 4,
+      "tiebreaker": 19.1
+    },
+    {
+      "name": "Mason",
+      "teams": [
+        {
+          "team": "Cubs",
+          "pick": "Over",
+          "line": 88.5,
+          "wins": 74,
+          "losses": 54,
+          "guess": 98,
+          "pace": 93.7,
+          "correct": true,
+          "diff": -4.3
+        },
+        {
+          "team": "Mets",
+          "pick": "Under",
+          "line": 90.5,
+          "wins": 58,
+          "losses": 70,
+          "guess": 85,
+          "pace": 73.4,
+          "correct": true,
+          "diff": -11.6
+        },
+        {
+          "team": "Athletics",
+          "pick": "Under",
+          "line": 75.5,
+          "wins": 49,
+          "losses": 78,
+          "guess": 68,
+          "pace": 62.5,
+          "correct": true,
+          "diff": -5.5
+        },
+        {
+          "team": "Astros",
+          "pick": "Over",
+          "line": 86.5,
+          "wins": 64,
+          "losses": 63,
+          "guess": 90,
+          "pace": 81.6,
+          "correct": false,
+          "diff": -8.4
+        },
+        {
+          "team": "Red Sox",
+          "pick": "Under",
+          "line": 87.5,
+          "wins": 68,
+          "losses": 59,
+          "guess": 86,
+          "pace": 86.7,
+          "correct": true,
+          "diff": 0.7
+        }
+      ],
+      "correct": 4,
+      "tiebreaker": 22.2
     },
     {
       "name": "Liam",
@@ -131,60 +131,60 @@
           "team": "White Sox",
           "pick": "Under",
           "line": 67.5,
-          "wins": 65,
+          "wins": 66,
           "losses": 60,
           "guess": 64,
-          "pace": 84.2,
+          "pace": 84.9,
           "correct": false,
-          "diff": 20.2
+          "diff": 20.9
         },
         {
           "team": "Rangers",
           "pick": "Over",
           "line": 83.5,
           "wins": 62,
-          "losses": 64,
+          "losses": 65,
           "guess": 87,
-          "pace": 79.7,
+          "pace": 79.1,
           "correct": false,
-          "diff": -7.3
+          "diff": -7.9
         },
         {
           "team": "Orioles",
           "pick": "Under",
           "line": 85.5,
           "wins": 61,
-          "losses": 65,
+          "losses": 66,
           "guess": 77,
-          "pace": 78.4,
+          "pace": 77.8,
           "correct": true,
-          "diff": 1.4
+          "diff": 0.8
         },
         {
           "team": "Marlins",
           "pick": "Over",
           "line": 72.5,
           "wins": 64,
-          "losses": 63,
+          "losses": 64,
           "guess": 80,
-          "pace": 81.6,
+          "pace": 81.0,
           "correct": true,
-          "diff": 1.6
+          "diff": 1.0
         },
         {
           "team": "Rays",
           "pick": "Over",
           "line": 77.5,
-          "wins": 75,
+          "wins": 76,
           "losses": 50,
           "guess": 81,
-          "pace": 97.2,
+          "pace": 97.7,
           "correct": true,
-          "diff": 16.2
+          "diff": 16.7
         }
       ],
       "correct": 3,
-      "tiebreaker": 19.3
+      "tiebreaker": 18.5
     },
     {
       "name": "Nate",
@@ -194,59 +194,59 @@
           "pick": "Over",
           "line": 86.5,
           "wins": 74,
-          "losses": 52,
+          "losses": 53,
           "guess": 89,
-          "pace": 95.1,
+          "pace": 94.4,
           "correct": true,
-          "diff": 6.1
+          "diff": 5.4
         },
         {
           "team": "D-backs",
           "pick": "Over",
           "line": 79.5,
-          "wins": 66,
+          "wins": 67,
           "losses": 61,
           "guess": 82,
-          "pace": 84.2,
+          "pace": 84.8,
           "correct": true,
-          "diff": 2.2
+          "diff": 2.8
         },
         {
           "team": "Nationals",
           "pick": "Under",
           "line": 65.5,
-          "wins": 60,
+          "wins": 61,
           "losses": 67,
           "guess": 58,
-          "pace": 76.5,
+          "pace": 77.2,
           "correct": false,
-          "diff": 18.5
+          "diff": 19.2
         },
         {
           "team": "Guardians",
           "pick": "Over",
           "line": 79.5,
           "wins": 61,
-          "losses": 65,
+          "losses": 66,
           "guess": 81,
-          "pace": 78.4,
+          "pace": 77.8,
           "correct": false,
-          "diff": -2.6
+          "diff": -3.2
         },
         {
           "team": "Rockies",
           "pick": "Under",
           "line": 54.5,
           "wins": 50,
-          "losses": 76,
+          "losses": 77,
           "guess": 49,
-          "pace": 64.3,
+          "pace": 63.8,
           "correct": false,
-          "diff": 15.3
+          "diff": 14.8
         }
       ],
       "correct": 2,
-      "tiebreaker": 8.3
+      "tiebreaker": 8.2
     },
     {
       "name": "Corbin",
@@ -255,60 +255,60 @@
           "team": "Reds",
           "pick": "Over",
           "line": 80.5,
-          "wins": 60,
+          "wins": 61,
           "losses": 66,
           "guess": 85,
-          "pace": 77.1,
+          "pace": 77.8,
           "correct": false,
-          "diff": -7.9
+          "diff": -7.2
         },
         {
           "team": "Padres",
           "pick": "Over",
           "line": 83.5,
           "wins": 68,
-          "losses": 59,
+          "losses": 60,
           "guess": 84,
-          "pace": 86.7,
+          "pace": 86.1,
           "correct": true,
-          "diff": 2.7
+          "diff": 2.1
         },
         {
           "team": "Phillies",
           "pick": "Over",
           "line": 89.5,
-          "wins": 69,
+          "wins": 70,
           "losses": 58,
           "guess": 90,
-          "pace": 88.0,
+          "pace": 88.6,
           "correct": false,
-          "diff": -2.0
+          "diff": -1.4
         },
         {
           "team": "Cardinals",
           "pick": "Under",
           "line": 69.5,
           "wins": 65,
-          "losses": 62,
+          "losses": 63,
           "guess": 66,
-          "pace": 82.9,
+          "pace": 82.3,
           "correct": false,
-          "diff": 16.9
+          "diff": 16.3
         },
         {
           "team": "Blue Jays",
           "pick": "Under",
           "line": 88.5,
           "wins": 62,
-          "losses": 65,
+          "losses": 66,
           "guess": 87,
-          "pace": 79.1,
+          "pace": 78.5,
           "correct": true,
-          "diff": -7.9
+          "diff": -8.5
         }
       ],
       "correct": 2,
-      "tiebreaker": 10.7
+      "tiebreaker": 10.6
     },
     {
       "name": "Sam",
@@ -317,61 +317,61 @@
           "team": "Yankees",
           "pick": "Over",
           "line": 90.5,
-          "wins": 70,
+          "wins": 71,
           "losses": 55,
           "guess": 95,
-          "pace": 90.7,
+          "pace": 91.3,
           "correct": true,
-          "diff": -4.3
+          "diff": -3.7
         },
         {
           "team": "Mariners",
           "pick": "Over",
           "line": 89.5,
-          "wins": 59,
+          "wins": 60,
           "losses": 67,
           "guess": 97,
-          "pace": 75.9,
+          "pace": 76.5,
           "correct": false,
-          "diff": -21.1
+          "diff": -20.5
         },
         {
           "team": "Tigers",
           "pick": "Over",
           "line": 85.5,
           "wins": 61,
-          "losses": 65,
+          "losses": 66,
           "guess": 102,
-          "pace": 78.4,
+          "pace": 77.8,
           "correct": false,
-          "diff": -23.6
+          "diff": -24.2
         },
         {
           "team": "Royals",
           "pick": "Over",
           "line": 82.5,
-          "wins": 53,
+          "wins": 54,
           "losses": 74,
           "guess": 92,
-          "pace": 67.6,
+          "pace": 68.3,
           "correct": false,
-          "diff": -24.4
+          "diff": -23.7
         },
         {
           "team": "Giants",
           "pick": "Under",
           "line": 80.5,
-          "wins": 51,
+          "wins": 52,
           "losses": 74,
           "guess": 74,
-          "pace": 66.1,
+          "pace": 66.9,
           "correct": true,
-          "diff": -7.9
+          "diff": -7.1
         }
       ],
       "correct": 2,
-      "tiebreaker": 12.2
+      "tiebreaker": 10.9
     }
   ],
-  "last_updated": "August 19, 2026, 06:14 AM"
+  "last_updated": "August 20, 2026, 06:15 AM"
 }
