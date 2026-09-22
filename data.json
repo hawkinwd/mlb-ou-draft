@@ -52,11 +52,11 @@
           "pick": "Under",
           "line": 72.5,
           "wins": 73,
-          "losses": 83,
+          "losses": 84,
           "guess": 71,
-          "pace": 75.8,
+          "pace": 75.3,
           "correct": false,
-          "diff": 4.8
+          "diff": 4.3
         }
       ],
       "correct": 4,
@@ -154,11 +154,11 @@
           "pick": "Under",
           "line": 65.5,
           "wins": 73,
-          "losses": 83,
+          "losses": 84,
           "guess": 58,
-          "pace": 75.8,
+          "pace": 75.3,
           "correct": false,
-          "diff": 17.8
+          "diff": 17.3
         },
         {
           "team": "Guardians",
@@ -215,12 +215,12 @@
           "team": "Orioles",
           "pick": "Under",
           "line": 85.5,
-          "wins": 75,
+          "wins": 76,
           "losses": 81,
           "guess": 77,
-          "pace": 77.9,
+          "pace": 78.4,
           "correct": true,
-          "diff": 0.9
+          "diff": 1.4
         },
         {
           "team": "Marlins",
@@ -246,7 +246,7 @@
         }
       ],
       "correct": 3,
-      "tiebreaker": 20.3
+      "tiebreaker": 20.8
     },
     {
       "name": "Sam",
@@ -277,12 +277,12 @@
           "team": "Tigers",
           "pick": "Over",
           "line": 85.5,
-          "wins": 73,
+          "wins": 74,
           "losses": 83,
           "guess": 102,
-          "pace": 75.8,
+          "pace": 76.4,
           "correct": false,
-          "diff": -26.2
+          "diff": -25.6
         },
         {
           "team": "Royals",
@@ -299,16 +299,16 @@
           "team": "Giants",
           "pick": "Under",
           "line": 80.5,
-          "wins": 64,
+          "wins": 65,
           "losses": 92,
           "guess": 74,
-          "pace": 66.5,
+          "pace": 67.1,
           "correct": true,
-          "diff": -7.5
+          "diff": -6.9
         }
       ],
       "correct": 2,
-      "tiebreaker": 9.5
+      "tiebreaker": 8.9
     },
     {
       "name": "Corbin",
@@ -362,16 +362,16 @@
           "pick": "Under",
           "line": 88.5,
           "wins": 77,
-          "losses": 79,
+          "losses": 80,
           "guess": 87,
-          "pace": 80.0,
+          "pace": 79.5,
           "correct": true,
-          "diff": -7.0
+          "diff": -7.5
         }
       ],
       "correct": 2,
-      "tiebreaker": 13.4
+      "tiebreaker": 13.9
     }
   ],
-  "last_updated": "September 21, 2026, 12:01 PM"
+  "last_updated": "September 22, 2026, 10:12 AM"
 }
